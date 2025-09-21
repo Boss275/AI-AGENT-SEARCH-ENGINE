@@ -1,0 +1,14 @@
+ipykernel
+duckduckgo-search
+python-dotenv
+wikipedia
+langchain-groq
+validators
+langchain-core
+langchain
+bs4
+langchain-community
+ddgs
+arxiv
+langchain-text-splitters
+streamlit
