@@ -10,13 +10,13 @@ from dotenv import load_dotenv
 
 load_dotenv(".env")
 
-st.title("AI Search Engine: Context Aware Agent")
+st.title("AI Agent Search Engine")
 
 with st.sidebar:
-    key = os.getenv("GROQ_API_KEY") or st.text_input("Groq API Key", type="password")
+    key = os.getenv("GROQ_API_KEY") or st.text_input("Groq API Key:", type="password")
 
 if not key:
-    st.warning("Groq API Key required in sidebar")
+    st.warning("Please enter your Groq API Key")
     st.stop()
 
 llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=key)
